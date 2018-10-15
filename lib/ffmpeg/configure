@@ -3553,6 +3553,11 @@ probe_cc(){
 
     if $_cc --version 2>&1 | grep -q '^GNU assembler'; then
         true # no-op to avoid reading stdin in following checks
+    elif $_cc --version 2>&1 | grep -q clang; then
+        _type=clang
+        _ident=$($_cc --version 2>/dev/null | head -n1)
+        _depflags='-MMD -MF $(@:.o=.d) -MT $@'
+        _cflags_speed='-O3'
     elif $_cc -v 2>&1 | grep -q '^gcc.*LLVM'; then
         _type=llvm_gcc
         gcc_extra_ver=$(expr "$($_cc --version 2>/dev/null | head -n1)" : '.*\((.*)\)')
