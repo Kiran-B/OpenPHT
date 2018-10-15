@@ -227,7 +227,7 @@ void CSettings::GetSources(const TiXmlElement* pRootElement, const CStdString& s
   if (pChild)
   {
     pChild = pChild->FirstChild();
-    while (pChild > 0)
+    while (pChild != nullptr)
     {
       CStdString strValue = pChild->Value();
       if (strValue == "source" || strValue == "bookmark") // "bookmark" left in for backwards compatibility
