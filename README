@@ -1,4 +1,22 @@
 ----------
+! This is a clone of https://github.com/RasPlex/OpenPHT
+Like many, I use OpenPHT with Plex Server. I upgraded to macOS High Sierra, only to find 
+that Harmony remote no longer works :( 
+The good news was IOSPIRIT guys had a fix which XMBC had already incorporated. 
+I waited for a few days for the release of OpenPHT. But then I realized that the team 
+of OpenPHT is busy working on next awesome release of OpenPHT. So as a 
+appreciation for their hard work, I thought I would provide an interim release of OpenPHT with
+just the fix for remote. Hence this fork will not be actively maintained further. 
+The main repo shall be the go-to for OpenPHT.
+
+In the mean time this repo shall serve two purpose:
+- Offer a pre-built OpenPHT binary with compatibility for High Sierra and Mojave
+- Offer sourcecode with High Sierra fix to allow anyone to build their own version of the app 
+  (in case the pre-built binary does not work)
+----------
+
+
+----------
 ! Note that this is the Plex Home Theater tree of XBMC !
 ----------
 
