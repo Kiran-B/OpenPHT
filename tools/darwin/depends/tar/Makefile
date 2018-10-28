@@ -2,9 +2,10 @@ include ../Makefile.include
 
 # app name, version
 APPNAME=tar
-VERSION=1.23
+VERSION=1.30
 SOURCE=$(APPNAME)-$(VERSION)
 ARCHIVE=$(SOURCE).tar.gz
+BASE_URL=http://ftp.gnu.org/gnu/tar
 
 export LIBTOOL=builds/unix/libtool
 export PATH:=$(TOOLCHAIN)/bin:$(PATH)
