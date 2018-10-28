@@ -1,0 +1,18 @@
+NEW:
+  - Added fetching of photos from multiple servers for screensaver.
+  - Updated to ffmpeg 2.8.14
+
+FIXES:
+  - High Sierra remote fix.
+  - Correct German translation for preview
+  - Fix "there was a problem selecting this stream" message in webclient
+
+KNOWN ISSUES:
+  - Auto-update on Mac is unsupported.
+  - Release only includes macOS x64 (64-bit) support.
+  - Minimum macOS supported is 10.12 but tested only in 10.13 & 10.14
+  - On first launch after upgrade, a blank screen may appear following the splash screen. Toggle the full screen mode to confirm whether the content appears. Native full screen mode and a restart fixes this.
+  - If remote does not work after upgrade, quit OpenPHT. Delete '~/Library/Application Support/OpenPHT/PlexHTHelper'. Relaunch OpenPHT.
+
+IMPORTANT:
+  - This is not a well tested release. Let me know if you encounter any issues and I shall try my best to help you resolve. 
